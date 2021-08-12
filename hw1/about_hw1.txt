@@ -1,0 +1,10 @@
+Main algorithm: Steepest Descent
+Other algorithms used: Line Search and Zoom algorithm
+Stopping criteria: Gradient norm < tolerance
+
+Optimal x*: [2/c, -1] (where c is a given value, see .m file)
+f(x*) = 0
+
+Main results: convergence plots in folder (.png files)
+
+Main reference: Numerical Optimization by Nocedal

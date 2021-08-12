@@ -1,0 +1,15 @@
+Main algorithm: Conjugate Gradient (CG)
+Other algorithms used: Fletcher-Reeves (FR), Polak-Ribiere (PR), Fletcher-Reeves with restart (FR-r)
+Stopping criteria: residual < tolerance
+
+Problem to solve for CG: linear system Ax=b, where b is a random vector and A is
+  - option 1) a random matrix with uniformly distributed eigenvalues
+  - option 2) clustered eigenvalues (see code)
+  
+Problem to solve for FR, PR, FR-r: min f(x), with
+  Optimal x*: 
+  f(x*) = 
+
+Main results: convergence plots in folder (.png files)
+
+Main reference: Numerical Optimization by Nocedal

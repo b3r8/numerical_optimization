@@ -1,0 +1,11 @@
+Main algorithm: L-BFGS
+Other algorithms used: Line Search, Zoom algorithm and two-loop recursion subalgorithm
+Stopping criteria: error < tolerance
+
+Problem to solve: min f(x) = sum(alphaf(x_{2i} - x_{2i-1}^2)^2 + (1 - x_{2i-1})^2), 1 <= i <= n/2
+  Optimal xmin: vector of ones
+  f(xmin) = 0
+
+Main results: convergence plots in folder (.png files)
+
+Main reference: Numerical Optimization by Nocedal

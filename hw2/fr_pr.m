@@ -46,8 +46,8 @@ while fgradNorm > tol
 end
 
 % Print final solution
-disp('final solution x_sol for FR-r:')
-disp(x)
+%disp('final solution x_sol for FR-r:')
+%disp(x)
 
 % Print value of f at final solution
 disp('f(x_sol) for FR-r:')
@@ -79,8 +79,8 @@ while fgradNorm > tol
 end
 
 % Print final solution
-disp('final solution x_sol for PR:')
-disp(x)
+%disp('final solution x_sol for PR:')
+%disp(x)
 
 % Print value of f at final solution
 disp('f(x_sol) for PR:')
@@ -115,8 +115,8 @@ while fgradNorm > tol
 end
 
 % Print final solution
-disp('final solution x_sol for FR:')
-disp(x)
+%disp('final solution x_sol for FR:')
+%disp(x)
 
 % Print value of f at final solution
 disp('f(x_sol) for FR:')

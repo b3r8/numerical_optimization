@@ -2,9 +2,9 @@ Main algorithm: Conjugate Gradient (CG)
 Other algorithms used: Fletcher-Reeves (FR), Polak-Ribiere (PR), Fletcher-Reeves with restart (FR-r)
 Stopping criteria: residual < tolerance
 
-Problem to solve for CG: linear system Ax=b, where b is a random vector and A is
+Problem to solve for CG: linear system Ax=b (or equivalently, quadratic optimization problem min f(x)=1/2x'Ax-bx), where b is a random vector and A is
   - option 1) a random matrix with uniformly distributed eigenvalues
-  - option 2) clustered eigenvalues (see code)
+  - option 2) a random matrix with clustered eigenvalues (see code)
   
 Problem to solve for FR, PR, FR-r: min f(x), with
   Optimal xmin: 

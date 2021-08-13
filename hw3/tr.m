@@ -130,7 +130,7 @@ while error > tol
 		x = x + p;
 	end
 
-  aux = 1 + (x'*A*x);
+  	aux = 1 + (x'*A*x);
 	error = log(aux);
 	errorLog = log10(error);
 	recordD = [recordD ; errorLog];

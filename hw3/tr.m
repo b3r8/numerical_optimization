@@ -42,7 +42,7 @@ delta = maxDelta/2
 
 % Stopping criteria: error           
 while error > tol
-  % Cauchy point calculation (Equations 4.11 and 4.12 in Nocedal)
+  	% Cauchy point calculation (Equations 4.11 and 4.12 in Nocedal)
 	grad = (2/aux)*A*x;
 	discr = grad'*A*grad;
 	if discr > 0
@@ -52,7 +52,7 @@ while error > tol
 	end
 	p = -alpha*grad;
 
-  % Ratio ro (Equation 4.4 in Nocedal)                                  
+  	% Ratio ro (Equation 4.4 in Nocedal)                                  
 	ro = (log(aux) - log(1 + ((x+p)'*A*(x+p))))/(-(grad'*p) - (.5*p'*A*p));
 
 	if ro < .25
@@ -74,8 +74,8 @@ while error > tol
 end
 
 % Print final solution
-disp('final solution x_sol for TR with Cauchy point:')
-disp(x)
+%disp('final solution x_sol for TR with Cauchy point:')
+%disp(x)
 
 % Print value of f at final solution
 disp('f(x_sol) for TR with Cauchy point:')
@@ -98,7 +98,7 @@ recordD = [errorLog];
 
 % Stopping criteria: error                      
 while error > tol
-  % Dogleg method (Equations 4.15 and 4.16 in Nocedal)
+  	% Dogleg method (Equations 4.15 and 4.16 in Nocedal)
 	grad = (2/aux)*A*x;
 	discr = grad'*A*grad;
 	pU = -grad*(grad'*grad)/discr;
@@ -115,7 +115,7 @@ while error > tol
 		p = pU + (tau - 1)*(pB - pU);
 	end
 	
-  % Ratio ro (Equation 4.4 in Nocedal) 
+  	% Ratio ro (Equation 4.4 in Nocedal) 
 	ro = (log(aux) - log(1 + ((x+p)'*A*(x+p))))/(-(grad'*p) - (.5*p'*A*p));
 
 	if ro < .25
@@ -137,8 +137,8 @@ while error > tol
 end
 
 % Print final solution
-disp('final solution x_sol for TR with dogleg method:')
-disp(x)
+%disp('final solution x_sol for TR with dogleg method:')
+%disp(x)
 
 % Print value of f at final solution
 disp('f(x_sol) for TR with dogleg method:')

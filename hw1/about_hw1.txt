@@ -2,7 +2,7 @@ Main algorithm: Steepest Descent
 Other algorithms used: Line Search and Zoom algorithm
 Stopping criteria: Gradient norm < tolerance
 
-Problem to solve: min f(x), with
+Problem to solve: min f(x) = (cx1-2)^4 + (x2^2)(cx1-2)^2 + (x2+1)^2, with
 Optimal xmin: [2/c, -1] (where c is a given value, see .m file)
 f(xmin) = 0
 

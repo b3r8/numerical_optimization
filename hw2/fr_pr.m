@@ -205,7 +205,6 @@ function alpha = lineSearch(x_k, P_k, alphaMax)
 		end
 		i = i + 1;
 	end
-	alpha;
 end
 
 %Zoom algorithm (Algorithm 3.6 in Nocedal)

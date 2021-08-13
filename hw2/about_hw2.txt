@@ -7,8 +7,8 @@ Problem to solve for CG: linear system Ax=b, where b is a random vector and A is
   - option 2) clustered eigenvalues (see code)
   
 Problem to solve for FR, PR, FR-r: min f(x), with
-  Optimal x*: 
-  f(x*) = 
+  Optimal xmin: 
+  f(xmin) = 
 
 Main results: convergence plots in folder (.png files)
 

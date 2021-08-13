@@ -6,7 +6,9 @@ Problem to solve for CG: linear system Ax=b (or equivalently, quadratic optimiza
   - option 1) a random matrix with uniformly distributed eigenvalues
   - option 2) a random matrix with clustered eigenvalues (see code)
   
-Problem to solve for FR, PR, FR-r: min f(x)
+Problem to solve for FR, PR, FR-r: min f(x) = sum(100(xi^2 - x_{i+1})^2 + (xi - 1)^2), 1 <= i <= n-1
+  Optimal xmin: vector of ones
+  f(xmin) = 0
 
 Main results: convergence plots in folder (.png files)
 

@@ -78,24 +78,24 @@ end
 % (Inexact) Line Search algorithm, using Wolfe conditions (Algorithm 3.5 in Nocedal)
 function alpha = lineSearch(c, x_k, P_k, alphaMax)
   % Values suggested in Nocedal for c1 and c2
-	c1 = 0.1
-	c2 = 0.9
-	alphaPrev = 0
-	alpha = (alphaPrev + alphaMax)/2
+	c1 = 0.1;
+	c2 = 0.9;
+	alphaPrev = 0;
+	alpha = (alphaPrev + alphaMax)/2;
 	phiZero = phiOne(c, x_k, P_k, 0);
 	phiZeroPrime = phiOneDeriv(c, x_k, P_k, 0);
-	i = 1
+	i = 1;
 
 	while 1
 		phiAlpha = phiOne(c, x_k, P_k, alpha);
 		phiAlphaPrev = phiOne(c, x_k, P_k, alphaPrev);
-    % Check Armijo condition
+    		% Check Armijo condition
 		if (phiAlpha > (phiZero + (c1*alpha*phiZeroPrime))) || ((i > 1) && (phiAlpha >= phiAlphaPrev))
 			alpha = zoomLS(alphaPrev, alpha, c, x_k, P_k, phiZero, phiZeroPrime, c1, c2);
 			break
 		else
 			phiAlphaPrime = phiOneDeriv(c, x_k, P_k, alpha);
-      % Check curvature condition
+      			% Check curvature condition
 			if abs(phiAlphaPrime) <= (-c2*phiZeroPrime)
 				break
 			elseif phiAlphaPrime >= 0
@@ -108,7 +108,6 @@ function alpha = lineSearch(c, x_k, P_k, alphaMax)
 		end
 		i = i + 1;
 	end
-	alpha
 end
 
 % Zoom algorithm (Algorithm 3.6 in Nocedal)

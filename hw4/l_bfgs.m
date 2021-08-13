@@ -239,7 +239,6 @@ function BFGSRecursion = BFGSR(x, alphaf, k, m, H, Sk, Yk)
 			r = r + ((ALPHAUX(counter) - beta)*Sk(:,index));
 			counter = counter - 1;
 		end
-		counter;
 	end
 	BFGSRecursion = -r;
 end

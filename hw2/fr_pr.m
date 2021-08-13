@@ -136,7 +136,7 @@ grid on;
 grid minor;
 saveas(gcf,'FR_PR.png');
 
-% Function f to optimize
+% Function to optimize, f(x) = sum(100(xi^2 - x_{i+1})^2 + (xi - 1)^2), 1 <= i <= n-1
 function fX = fOne(x)
 	nf = length(x);
 	x2 = x.^2;

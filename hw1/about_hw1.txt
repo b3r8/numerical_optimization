@@ -3,8 +3,8 @@ Other algorithms used: Line Search and Zoom algorithm
 Stopping criteria: Gradient norm < tolerance
 
 Problem to solve: min f(x), with
-Optimal x*: [2/c, -1] (where c is a given value, see .m file)
-f(x*) = 0
+Optimal xmin: [2/c, -1] (where c is a given value, see .m file)
+f(xmin) = 0
 
 Main results: convergence plots in folder (.png files)
 

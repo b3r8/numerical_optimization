@@ -42,7 +42,7 @@ while fgradNorm > tol
 	end
 	P = -fgrad + (betaFRR*P);
 	recordFRR = [recordFRR ; log10(fOne(x))];
-  FRRIter = FRRIter + 1
+  FRRIter = FRRIter + 1;
 end
 
 % Print final solution
@@ -75,7 +75,7 @@ while fgradNorm > tol
 	betaPR = (fgrad'*(fgrad-fgradPrev))/(fgradPrev'*fgradPrev);
 	P = -fgrad + (betaPR*P);
 	recordPR = [recordPR ; log10(fOne(x))];
-  PRIter = PRIter + 1
+  PRIter = PRIter + 1;
 end
 
 % Print final solution
@@ -108,7 +108,7 @@ while fgradNorm > tol
 	betaFR = (fgrad'*fgrad)/(fgradPrev'*fgradPrev);
 	P = -fgrad + (betaFR*P);
 	recordFR = [recordFR ; log10(fOne(x))];
-	FRIter = FRIter + 1
+	FRIter = FRIter + 1;
 	if FRIter > 2*max(FRRIter,PRIter)
 		break
 	end

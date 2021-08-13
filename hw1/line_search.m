@@ -36,11 +36,11 @@ while fgradNorm > tol
 end
 
 % Print final solution
-disp('final solution:')
+disp('final solution x_sol:')
 disp(x)
 
 % Print value of f at final solution
-disp('f(x*)')
+disp('f(x_sol)')
 disp(fOne(x, c))
 
 % Plot convergence and save in PNG file

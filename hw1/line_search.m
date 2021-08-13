@@ -52,7 +52,7 @@ grid on;
 grid minor;
 saveas(gcf,'steep_desc_ceq10.png')
 
-% Function f to optimize
+% Function to optimize, f(x) = (cx1-2)^4 + (x2^2)(cx1-2)^2 + (x2+1)^2
 function fX = fOne(x, c)
 	fX = (((c*x(1)) - 2)^4) + ((x(2)^2)*(((c*x(1)) - 2)^2)) + ((x(2) + 1)^2);
 end

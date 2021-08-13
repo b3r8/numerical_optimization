@@ -76,8 +76,8 @@ while norm(r) > tol
 end
 
 % Print final solution
-disp('final solution x_sol for A1:')
-disp(x)
+%disp('final solution x_sol for A1:')
+%disp(x)
 
 % Print value of f at final solution
 disp('f(x_sol) for A1:')
@@ -106,8 +106,8 @@ while norm(r) > tol
 end
 
 % Print final solution
-disp('final solution x_sol for A2:')
-disp(x)
+%disp('final solution x_sol for A2:')
+%disp(x)
 
 % Print value of f at final solution
 disp('f(x_sol) for A2:')
